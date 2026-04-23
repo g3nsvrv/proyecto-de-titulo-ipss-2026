@@ -2,7 +2,7 @@ name: glpi
 
 services:
   glpi:
-    image: "glpi/glpi:latest"
+    image: "glpi/glpi:11.0.6"
     restart: "unless-stopped"
     volumes:
        # Using a named volume avoids permission issues on host (automatically managed by Docker)
@@ -16,15 +16,15 @@ services:
       - "80:80"
 
   db:
-    image: "mysql"
+    image: mariadb
     restart: "unless-stopped"
     volumes:
        - db_data:/var/lib/mysql
     environment:
-      MYSQL_RANDOM_ROOT_PASSWORD: "yes"
-      MYSQL_DATABASE: ${GLPI_DB_NAME}
-      MYSQL_USER: ${GLPI_DB_USER}
-      MYSQL_PASSWORD: ${GLPI_DB_PASSWORD}
+      MARIADB_ROOT_PASSWORD: yes
+      MARIADB_DATABASE: ${GLPI_DB_NAME}
+      MARIADB_USER: ${GLPI_DB_USER}
+      MARIADB_PASSWORD: ${GLPI_DB_PASSWORD}
 
 volumes:
    glpi_data:
