@@ -1,7 +1,7 @@
-name: Generate changelog
+name: Update CHANGELOG
 on:
-  release:
-    types: [created, edited]
+  push:
+    branches: [ main ]
 
 jobs:
   generate-changelog:
