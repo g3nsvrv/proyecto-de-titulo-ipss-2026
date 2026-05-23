@@ -12,6 +12,6 @@ jobs:
           fetch-depth: 0
 
       - name: Generate CHANGELOG
-        uses: BobAnkh/auto-generate-changelog@v1
+        uses: BobAnkh/auto-generate-changelog@v1.3.1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
