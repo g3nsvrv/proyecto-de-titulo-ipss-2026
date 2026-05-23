@@ -12,6 +12,6 @@ jobs:
           fetch-depth: 0
 
       - name: Generate CHANGELOG
-        uses: charmbracelet/action-changelog@master
+        uses: requarks/changelog-action@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
