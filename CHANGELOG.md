@@ -76,3 +76,5 @@ Actualizado automáticamente con todos los commits del repositorio.
 - 2026-06-13 - 3b9716e - Manual de Operaciones GLPI (g3nsvrv)
 - 2026-06-14 - e831009 - docs: update changelog [skip ci] (github-actions[bot])
 - 2026-06-13 - 7a610ef - Informe Final Actualizado, que incluye nuevas capturas, nuevas referencias a anexos y el repositorio github, ademas del link del backlog (g3nsvrv)
+- 2026-06-14 - b17a876 - docs: update changelog [skip ci] (github-actions[bot])
+- 2026-06-13 - 45ba219 - Se actualiza README para incluir las ultimas modificaciones del Informe Final (g3nsvrv)
