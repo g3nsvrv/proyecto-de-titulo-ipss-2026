@@ -80,7 +80,6 @@ Estas tecnologías fueron seleccionadas por su compatibilidad con la instalació
 ## 6. Estructura del repositorio
 
 ```text
-proyecto-de-titulo-ipss-2026-evax/
 ├── CHANGELOG.md
 ├── Container
 │   └── docker-compose.yml
@@ -92,16 +91,16 @@ proyecto-de-titulo-ipss-2026-evax/
 │       └── files.zip
 ├── docs
 │   ├── install
-│   │   ├── Instalacion de Agente GLPI .docx
-│   │   └── Instalacion de GLPI.docx
+│   │   ├── Instalacion de Agente GLPI.pdf
+│   │   └── Instalacion de GLPI.pdf
 │   ├── operation
-│   │   └── Manual de Operaciones GLPI.docx
+│   │   └── Manual de Operaciones GLPI.pdf
 │   └── user-guides
-│       ├── Asignar Perfil en GLPI.docx
-│       ├── Creacion de Ticket.docx
-│       ├── Creacion de Usuarios en GLPI.docx
-│       ├── Crear un Perfil en GLPI.docx
-│       └── Eliminar Usuarios en GLPI.docx
+│       ├── Asignar Perfil en GLPI.pdf
+│       ├── Creacion de Ticket.pdf
+│       ├── Creacion de Usuarios en GLPI.pdf
+│       ├── Crear un Perfil en GLPI.pdf
+│       └── Eliminar Usuarios en GLPI.pdf
 ├── evidence
 │   ├── deliverables
 │   │   └── Implementación de GLPI para la gestión de Mesa de Ayuda y control de activos TI en JUNJI.pdf
@@ -115,23 +114,63 @@ proyecto-de-titulo-ipss-2026-evax/
 │   │       └── vista-expandida-del-backlog.png
 │   └── testing
 │       ├── tc-01_crear-ticket-con-formulario-estructurado-completo
+│       │   ├── tc-01_01.png
+│       │   └── tc-01_02.png
 │       ├── tc-02_intentar-crear-ticket-sin-campos-obligatorios
+│       │   ├── tc-02_01.png
+│       │   ├── tc-02_02.png
+│       │   └── tc-02_03.png
 │       ├── tc-03_cambiar-estado-de-ticket-desde-nuevo-a-en-proceso
+│       │   ├── tc-03_01.png
+│       │   ├── tc-03_02.png
+│       │   └── tc-03_03.png
 │       ├── tc-04_asignar-ticket-a-tecnico-o-grupo-de-soporte
+│       │   ├── tc-04_01.png
+│       │   ├── tc-04_02.png
+│       │   └── tc-04_03.png
 │       ├── tc-05_asociar-ticket-a-un-activo-ti-registrado
+│       │   ├── tc-05_01.png
+│       │   ├── tc-05_02.png
+│       │   └── tc-05_03.png
 │       ├── tc-06_registrar-un-activo-ti-con-datos-basicos
+│       │   └── tc-06_01.png
 │       ├── tc-07_consultar-inventario-filtrado-por-ubicacion
+│       │   ├── tc-07_01.png
+│       │   └── tc-07_02.png
 │       ├── tc-08_verificar-relacion-entre-ticket-usuario-ubicacion-y-activo
+│       │   └── tc-08_01.png
 │       ├── tc-09_validar-que-dashboards-reflejen-datos-de-tickets-reales
+│       │   ├── tc-09_01.png
+│       │   └── tc-09_02.png
 │       ├── tc-10_exportar-reporte-filtrado-por-area-y-estado
+│       │   ├── tc-10_01.png
+│       │   ├── tc-10_02.png
+│       │   └── tc-10_03.png
 │       ├── tc-11_validar-restricciones-por-perfil-de-usuario
+│       │   └── tc-11_01.png
 │       ├── tc-12_verificar-acceso-al-sistema-desde-navegador-institucional
+│       │   └── tc-12_01.png
 │       ├── tc-13_validar-persistencia-de-datos-luego-de-reinicio-del-servicio
+│       │   ├── tc-13_01.png
+│       │   ├── tc-13_02.png
+│       │   └── tc-13_03.png
 │       ├── tc-14_usuario-final-registra-y-consulta-su-ticket
+│       │   ├── tc-14_01.png
+│       │   ├── tc-14_02.png
+│       │   ├── tc-14_03.png
+│       │   ├── tc-14_04.png
+│       │   └── tc-14_05.png
 │       ├── tc-15_jefatura-consulta-indicadores-basicos-de-gestion
+│       │   ├── tc-15_01.png
+│       │   ├── tc-15_02.png
+│       │   └── tc-15_03.png
 │       ├── tc-16_validar-notificacion-al-crear-o-actualizar-ticket
+│       │   └── tc-16_01.png
 │       ├── tc-17_modificar-estado-de-activo-a-mantencion-o-extraviado
+│       │   ├── tc-17_01.png
+│       │   └── tc-17_02.png
 │       └── tc-18_validar-comprension-del-formulario-por-usuario-no-tecnico
+│           └── tc-18_01.png
 └── infra
     ├── database
     │   └── glpi_backup.sql
@@ -209,8 +248,8 @@ Estos parámetros corresponden al entorno de referencia utilizado para la instal
 
 La instalación completa de la plataforma se documenta en detalle en:
 
-* [Instalacion de GLPI](<docs/install/Instalacion de GLPI.docx>)
-* [Instalacion de Agente GLPI](<docs/install/Instalacion de Agente GLPI .docx>)
+* [Instalacion de GLPI](<docs/install/Instalacion de GLPI.pdf>)
+* [Instalacion de Agente GLPI](<docs/install/Instalacion de Agente GLPI.pdf>)
 
 De manera resumida, el flujo de instalación es el siguiente:
 
@@ -237,7 +276,7 @@ De manera resumida, el flujo de instalación es el siguiente:
   [glpi_backup.sql](<infra/database/glpi_backup.sql>)
 
 * Manual de operaciones:
-  [Manual de Operaciones GLPI](<docs/operation/Manual de Operaciones GLPI.docx>)
+  [Manual de Operaciones GLPI](<docs/operation/Manual de Operaciones GLPI.pdf>)
 
 ---
 
@@ -298,9 +337,9 @@ Actualmente se incluyen evidencias asociadas a los casos **TC-01 a TC-18**, cubr
 
 ### Manuales técnicos
 
-* [Instalación de GLPI](<docs/install/Instalacion de GLPI.docx>)
-* [Instalación del agente GLPI](<docs/install/Instalacion de Agente GLPI .docx>)
-* [Manual de operaciones GLPI](<docs/operation/Manual de Operaciones GLPI.docx>)
+* [Instalación de GLPI](<docs/install/Instalacion de GLPI.pdf>)
+* [Instalación del agente GLPI](<docs/install/Instalacion de Agente GLPI.pdf>)
+* [Manual de operaciones GLPI](<docs/operation/Manual de Operaciones GLPI.pdf>)
 
 Ubicación:
 
@@ -309,11 +348,11 @@ Ubicación:
 
 ### Manuales de usuario
 
-* [Asignación de perfiles](<docs/user-guides/Asignar Perfil en GLPI.docx>)
-* [Creación de tickets](<docs/user-guides/Creacion de Ticket.docx>)
-* [Creación de usuarios](<docs/user-guides/Creacion de Usuarios en GLPI.docx>)
-* [Crear un perfil en GLPI](<docs/user-guides/Crear un Perfil en GLPI.docx>)
-* [Eliminación de usuarios](<docs/user-guides/Eliminar Usuarios en GLPI.docx>)
+* [Asignación de perfiles](<docs/user-guides/Asignar Perfil en GLPI.pdf>)
+* [Creación de tickets](<docs/user-guides/Creacion de Ticket.pdf>)
+* [Creación de usuarios](<docs/user-guides/Creacion de Usuarios en GLPI.pdf>)
+* [Crear un perfil en GLPI](<docs/user-guides/Crear un Perfil en GLPI.pdf>)
+* [Eliminación de usuarios](<docs/user-guides/Eliminar Usuarios en GLPI.pdf>)
 
 Ubicación:
 
