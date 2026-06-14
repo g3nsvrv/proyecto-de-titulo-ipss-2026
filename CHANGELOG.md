@@ -82,3 +82,5 @@ Actualizado automáticamente con todos los commits del repositorio.
 - 2026-06-13 - 1037191 - Correccion de errores menores (g3nsvrv)
 - 2026-06-14 - 79e5ee6 - docs: update changelog [skip ci] (github-actions[bot])
 - 2026-06-13 - 50fe779 - Se cambia nombre del bot a auto-changelog (g3nsvrv)
+- 2026-06-14 - ec1a4f7 - docs: update changelog [skip ci] (auto-changelog[bot])
+- 2026-06-13 - fad62ee - Revirtiendo Cambios (g3nsvrv)
