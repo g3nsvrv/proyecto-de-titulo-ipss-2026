@@ -60,3 +60,6 @@ Actualizado automáticamente con todos los commits del repositorio.
 - 2026-06-11 - 1850e36 - removing originals (g3nsvrv)
 - 2026-06-11 - c2de34d - Se corrigio el formato de la exportacion PDF (g3nsvrv)
 - 2026-06-13 - 3658668 - Update changelog.yml (g3nsvrv)
+- 2026-06-13 - ce21521 - docs: update changelog [skip ci] (github-actions[bot])
+- 2026-06-13 - 715f34b - Se agregaron capturas del repositorio para informe final (g3nsvrv)
+- 2026-06-13 - fdb80a9 - merging changes Merge branch 'main' of github.com:g3nsvrv/proyecto-de-titulo-ipss-2026 (g3nsvrv)
