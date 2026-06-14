@@ -74,3 +74,5 @@ Actualizado automáticamente con todos los commits del repositorio.
 - 2026-06-13 - 0ede4f0 - Merge branch 'main' of github.com:g3nsvrv/proyecto-de-titulo-ipss-2026 (g3nsvrv)
 - 2026-06-14 - 4588820 - docs: update changelog [skip ci] (github-actions[bot])
 - 2026-06-13 - 3b9716e - Manual de Operaciones GLPI (g3nsvrv)
+- 2026-06-14 - e831009 - docs: update changelog [skip ci] (github-actions[bot])
+- 2026-06-13 - 7a610ef - Informe Final Actualizado, que incluye nuevas capturas, nuevas referencias a anexos y el repositorio github, ademas del link del backlog (g3nsvrv)
