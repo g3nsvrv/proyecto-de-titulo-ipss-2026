@@ -385,7 +385,7 @@ La documentación formal del proyecto se encuentra respaldada principalmente en:
 
 Entregable principal:
 
-* [Implementación de GLPI para la gestión de Mesa de Ayuda y control de activos TI en JUNJI](<evidence/deliverables/Implementación de GLPI para la gestión de Mesa de Ayuda y control de activos TI en JUNJI.pdf>)
+* [Implementación de GLPI para la gestión de Mesa de Ayuda y control de activos TI en JUNJI](<evidence/deliverables/Implementación de GLPI para la gestión de Mesa de Ayuda y control de activos TI en JUNJI.pdf>)
 
 ---
 
