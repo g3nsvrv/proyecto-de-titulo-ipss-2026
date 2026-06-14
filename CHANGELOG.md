@@ -80,3 +80,5 @@ Actualizado automáticamente con todos los commits del repositorio.
 - 2026-06-13 - 45ba219 - Se actualiza README para incluir las ultimas modificaciones del Informe Final (g3nsvrv)
 - 2026-06-14 - e2575cb - docs: update changelog [skip ci] (github-actions[bot])
 - 2026-06-13 - 1037191 - Correccion de errores menores (g3nsvrv)
+- 2026-06-14 - 79e5ee6 - docs: update changelog [skip ci] (github-actions[bot])
+- 2026-06-13 - 50fe779 - Se cambia nombre del bot a auto-changelog (g3nsvrv)
