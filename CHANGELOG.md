@@ -63,3 +63,6 @@ Actualizado automáticamente con todos los commits del repositorio.
 - 2026-06-13 - ce21521 - docs: update changelog [skip ci] (github-actions[bot])
 - 2026-06-13 - 715f34b - Se agregaron capturas del repositorio para informe final (g3nsvrv)
 - 2026-06-13 - fdb80a9 - merging changes Merge branch 'main' of github.com:g3nsvrv/proyecto-de-titulo-ipss-2026 (g3nsvrv)
+- 2026-06-14 - 4225978 - docs: update changelog [skip ci] (github-actions[bot])
+- 2026-06-13 - bcabe93 - removing unnused files (g3nsvrv)
+- 2026-06-13 - d58e923 - Merge branch 'main' of github.com:g3nsvrv/proyecto-de-titulo-ipss-2026 (g3nsvrv)
