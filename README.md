@@ -7,9 +7,9 @@ Este repositorio contiene los artefactos técnicos, documentales y de evidencia 
 La propuesta se orienta a resolver dos necesidades principales del cliente:
 
 * fortalecer la gestión de Mesa de Ayuda, actualmente muy dependiente del correo electrónico y con limitadas capacidades de reportería, trazabilidad, estandarización y control;
-* incorporar gestión y control de activos TI, con foco en ubicación, estado, responsable, antigüedad y relación con tickets de soporte.
+* incorporar gestión y control de activos TI, con foco en su trazabilidad, estado operativo, asignación y relación con tickets de soporte.
 
-La solución se basa en **GLPI**, desplegado sobre una **máquina virtual institucional**, utilizando una arquitectura web monolítica en capas sobre **Apache**, **PHP** y **MariaDB**. El proyecto considera además inventario automatizado mediante **GLPI Inventory / GLPI Agent** como línea de apoyo para etapas futuras de maduración del control de activos. 
+La solución se basa en **GLPI**, desplegado sobre una **máquina virtual institucional**, utilizando una arquitectura web monolítica en capas sobre **Apache**, **PHP** y **MariaDB**. El proyecto considera además inventario automatizado mediante **GLPI Inventory / GLPI Agent** como línea de apoyo para etapas futuras de maduración del control de activos.
 
 ---
 
@@ -30,9 +30,9 @@ Este repositorio tiene por objetivo centralizar:
 
 ## 3. Contexto y problema que aborda la propuesta
 
-La Junta Nacional de Jardines Infantiles (JUNJI) corresponde a un organismo público del Estado de Chile, con presencia nacional y alta complejidad operativa. En este contexto, se identificó una problemática asociada al sistema actual de Mesa de Ayuda, el cual operaba principalmente a partir de buzones de correo convertidos en tickets, con limitadas capacidades de análisis, reportería, trazabilidad y apoyo a la toma de decisiones. A ello se sumó la necesidad de fortalecer el control de activos TI institucionales, tales como computadores, notebooks, monitores y periféricos, con el propósito de mejorar su trazabilidad y reducir riesgos asociados a pérdida, robo, obsolescencia o descontrol de inventario. 
+La Junta Nacional de Jardines Infantiles (JUNJI) corresponde a un organismo público del Estado de Chile, con presencia nacional y alta complejidad operativa. En este contexto, se identificó una problemática asociada al sistema actual de Mesa de Ayuda, el cual operaba principalmente a partir de buzones de correo convertidos en tickets, con limitadas capacidades de análisis, reportería, trazabilidad y apoyo a la toma de decisiones. A ello se sumó la necesidad de fortalecer el control de activos TI institucionales, tales como computadores, notebooks, monitores y periféricos, con el propósito de mejorar su trazabilidad y reducir riesgos asociados a pérdida, robo, obsolescencia o descontrol de inventario.
 
-En respuesta a esta necesidad, el proyecto propuso una solución basada en GLPI para centralizar tickets y activos en una única plataforma, estructurar la información desde su origen, mejorar visibilidad operativa y habilitar reportería y control institucional. 
+En respuesta a esta necesidad, el proyecto propuso una solución basada en GLPI para centralizar tickets y activos en una única plataforma, estructurar la información desde su origen, mejorar visibilidad operativa y habilitar reportería y control institucional.
 
 ---
 
@@ -49,7 +49,7 @@ El MVP considerado en este proyecto incluye:
 * reportería y exportación básica;
 * registro y consulta de activos TI;
 * asociación entre tickets y activos;
-* control de estados de activos;
+* control de inventario y estados operativos;
 * validación funcional mediante pruebas y sesión de aceptación con usuarios.
 
 Quedan fuera del alcance inicial:
@@ -59,7 +59,7 @@ Quedan fuera del alcance inicial:
 * integración profunda con LDAP, Active Directory u otros sistemas institucionales;
 * automatización completa del inventario en todo el parque tecnológico;
 * despliegue productivo en contenedores o nube como parte del MVP inicial;
-* integraciones complejas con otros sistemas del cliente. 
+* integraciones complejas con otros sistemas del cliente.
 
 ---
 
@@ -144,7 +144,7 @@ proyecto-de-titulo-ipss-2026-evax/
                 └── 8.3
                     └── apache2
                         └── php.ini
-```
+````
 
 ### Descripción de carpetas principales
 
@@ -155,28 +155,28 @@ Incluye artefactos asociados a una posible evolución futura basada en contenedo
 Contiene respaldos o artefactos de configuración del sistema GLPI.
 
 **[docs/install/](<docs/install/>)**
-Manual técnico de instalación de GLPI y del agente GLPI.
+Contiene el manual técnico de instalación de GLPI y del agente GLPI.
 
 **[docs/operation/](<docs/operation/>)**
-Manual breve de operaciones del sistema, incluyendo verificación del servicio Apache, reinicio del servicio y respaldo de base de datos.
+Contiene el manual breve de operaciones del sistema, incluyendo verificación de estado del servicio Apache, reinicio del servicio y respaldo de base de datos.
 
 **[docs/user-guides/](<docs/user-guides/>)**
-Guías de usuario para tareas administrativas y operativas dentro de GLPI.
+Contiene guías de usuario para tareas administrativas y operativas dentro de GLPI.
 
 **[evidence/deliverables/](<evidence/deliverables/>)**
-Entregables formales del proyecto, incluido el informe final.
+Contiene los entregables formales del proyecto, incluido el informe final.
 
 **[evidence/screenshots/repositorio/](<evidence/screenshots/repositorio/>)**
-Capturas del repositorio, backlog, actividad del proyecto y evidencia visual del uso de GitHub como soporte de gestión.
+Contiene capturas del repositorio, backlog, actividad del proyecto y evidencia visual del uso de GitHub como soporte de gestión.
 
 **[evidence/testing/](<evidence/testing/>)**
-Evidencias visuales organizadas por caso de prueba, cubriendo TC-01 a TC-18.
+Contiene evidencias visuales organizadas por caso de prueba, cubriendo TC-01 a TC-18.
 
 **[infra/database/](<infra/database/>)**
-Respaldo de base de datos utilizado como referencia técnica del entorno.
+Contiene el respaldo de base de datos utilizado como referencia técnica del entorno.
 
 **[infra/webserver/](<infra/webserver/>)**
-Archivos de configuración de Apache y parámetros de PHP asociados al despliegue web.
+Contiene los archivos de configuración de Apache y parámetros de PHP asociados al despliegue web.
 
 ---
 
@@ -201,7 +201,7 @@ Archivos de configuración de Apache y parámetros de PHP asociados al despliegu
 * GLPI 10.0.15
 * GLPI Agent / GLPI Inventory cuando corresponda
 
-Estos parámetros corresponden al entorno de referencia utilizado para la instalación descrita en la documentación técnica del proyecto. 
+Estos parámetros corresponden al entorno de referencia utilizado para la instalación descrita en la documentación técnica del proyecto.
 
 ---
 
@@ -266,13 +266,12 @@ Las funcionalidades principales consideradas en la solución son:
 * seguimiento y bitácora de acciones;
 * dashboards operativos;
 * exportación de reportes;
-* registro de activos TI;
-* asociación ticket-activo;
-* consulta de inventario;
-* control de estados de activos;
+* registro y consulta de activos TI;
+* asociación entre tickets y activos;
+* control de inventario y estados operativos;
 * gestión de perfiles y permisos.
 
-En términos globales, la solución alcanzó implementación funcional sobre la totalidad de los requerimientos definidos para el MVP, con predominio de funcionalidades completamente implementadas y con operación verificable en ambiente de prueba. 
+En términos globales, la solución alcanzó implementación funcional sobre la totalidad de los requerimientos definidos para el MVP, con predominio de funcionalidades completamente implementadas y con operación verificable en ambiente de prueba.
 
 ---
 
@@ -285,7 +284,7 @@ El proyecto contempla una estrategia de validación basada principalmente en:
 * pruebas operacionales;
 * pruebas de seguridad básica;
 * pruebas de aceptación con usuario final;
-* validación de operación directa sobre la plataforma vía navegador web. 
+* validación de operación directa sobre la plataforma vía navegador web.
 
 Los casos de prueba se encuentran documentados en el informe y respaldados con evidencias visuales en la carpeta:
 
@@ -347,13 +346,13 @@ La documentación formal del proyecto se encuentra respaldada principalmente en:
 
 Entregable principal:
 
-* [Implementación de GLPI para la gestión de Mesa de Ayuda y control de activos TI en JUNJI.pdf](<evidence/deliverables/Implementación de GLPI para la gestión de Mesa de Ayuda y control de activos TI en JUNJI.pdf>)
+* [Implementación de GLPI para la gestión de Mesa de Ayuda y control de activos TI en JUNJI](<evidence/deliverables/Implementación de GLPI para la gestión de Mesa de Ayuda y control de activos TI en JUNJI.pdf>)
 
 ---
 
 ## 15. Estado actual del proyecto
 
-El proyecto se encuentra desarrollado como una **propuesta técnica de implementación con MVP funcional validado en ambiente de prueba**. Su foco está en demostrar viabilidad, cobertura funcional crítica y alineación con las necesidades del cliente, más que en una puesta en producción institucional completa. 
+El proyecto se encuentra desarrollado como una **propuesta técnica de implementación con MVP funcional validado en ambiente de prueba**. Su foco está en demostrar viabilidad, cobertura funcional crítica y alineación con las necesidades del cliente, más que en una puesta en producción institucional completa.
 
 En este contexto, las capacidades críticas del MVP fueron verificadas mediante pruebas documentadas, y las líneas de evolución futura incluyen:
 
@@ -362,7 +361,7 @@ En este contexto, las capacidades críticas del MVP fueron verificadas mediante 
 * ampliación del inventario automatizado;
 * integración con servicios de identidad;
 * fortalecimiento del gobierno del dato;
-* posible despliegue futuro en contenedores o nube. 
+* posible despliegue futuro en contenedores o nube.
 
 ---
 
