@@ -90,3 +90,5 @@ Actualizado automáticamente con todos los commits del repositorio.
 - 2026-06-13 - b21d6cc - Se reemplazaron los archivos de manuales de docx a pdf (g3nsvrv)
 - 2026-06-14 - 7b33641 - docs: update changelog [skip ci] (github-actions[bot])
 - 2026-06-13 - d964c61 - Se corrige link a informe (g3nsvrv)
+- 2026-06-14 - b88caa6 - docs: update changelog [skip ci] (github-actions[bot])
+- 2026-06-16 - c302161 - Se actualiza el dump de la base de datos para incluir la ultima informacion para showrun pruebas de usuario (g3nsvrv)
