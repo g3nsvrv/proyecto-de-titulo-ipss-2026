@@ -92,3 +92,6 @@ Actualizado automáticamente con todos los commits del repositorio.
 - 2026-06-13 - d964c61 - Se corrige link a informe (g3nsvrv)
 - 2026-06-14 - b88caa6 - docs: update changelog [skip ci] (github-actions[bot])
 - 2026-06-16 - c302161 - Se actualiza el dump de la base de datos para incluir la ultima informacion para showrun pruebas de usuario (g3nsvrv)
+- 2026-06-16 - fbfb10d - docs: update changelog [skip ci] (github-actions[bot])
+- 2026-06-16 - 2c4f96a - Nuevo archivo de cron para el usuario www-data, para enviar notificaciones (correos) (g3nsvrv)
+- 2026-06-16 - bca64ad - Se actualiza dump de la base de datos con los ultimos cambios - Notificationes - Cron (g3nsvrv)
